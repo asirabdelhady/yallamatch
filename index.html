@@ -6,39 +6,74 @@
     <title>Yalla Match</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="bg-dark text-white text-center py-5">
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <h1>Yalla Match</h1>
-            <p>Join Football Matches with Ease</p>
+            <a class="navbar-brand" href="#">Yalla Match</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who">Who Are We?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why">Why Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="container">
+    <div class="container mt-5 pt-5">
         <!-- Introduction Section -->
-        <section class="section-intro text-center py-5">
-            <h1>Welcome to Yalla Match</h1>
-            <p>Find and join open football matches without the hassle of reservations or gathering a full team.</p>
+        <section id="intro" class="section-intro py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="gradient-text"><span>Welcome to</span><span>Yalla Match</span></h1>
+                    <p>Find and join open football matches without the hassle of reservations or gathering a full team.</p>
+                    <a href="#how" class="btn btn-outline-secondary custom-btn">Register Now</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="home.svg" alt="Yalla Match" class="img-fluid">
+                </div>
+            </div>
         </section>
 
         <!-- Who Are We Section -->
-        <section class="section-who text-center py-5">
-            <h2>Who Are We?</h2>
+        <section id="who" class="section-who text-center py-5">
+            <h2 class="gradient-text">Who Are We?</h2>
             <p>We are a passionate team dedicated to making it easier for football enthusiasts to join and play matches. Whether you're a casual player or a football fanatic, Yalla Match is here to connect you with games in your area.</p>
         </section>
 
         <!-- Why Us Section -->
-        <section class="section-why text-center py-5 bg-light">
-            <h2>Why Us?</h2>
+        <section id="why" class="section-why text-center py-5">
+            <h2 class="gradient-text">Why Us?</h2>
             <p>Our platform simplifies the process of finding and joining football matches. No need to worry about booking fields or finding enough players. Just sign up and show up!</p>
         </section>
 
         <!-- How to Register Section -->
-        <section class="section-how text-center py-5">
-            <h2>How to Register</h2>
+        <section id="how" class="section-how text-center py-5">
+            <h2 class="gradient-text">How to Register</h2>
             <p>Follow these simple steps to join a match:</p>
             <ol class="text-left d-inline-block">
                 <li>Visit our Google Form to sign up for a match.</li>
@@ -48,8 +83,8 @@
         </section>
 
         <!-- Contact Us Section -->
-        <section class="section-contact text-center py-5 bg-light">
-            <h2>Contact Us</h2>
+        <section id="contact" class="section-contact text-center py-5">
+            <h2 class="gradient-text">Contact Us</h2>
             <p>Follow us on social media and stay updated:</p>
             <a href="https://facebook.com" class="d-block">Facebook</a>
             <a href="https://twitter.com" class="d-block">Twitter</a>
@@ -67,5 +102,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS for smooth scrolling -->
+    <script src="scripts.js"></script>
 </body>
 </html>
