@@ -171,7 +171,7 @@ function switchLanguage(lang) {
     const col2 = document.querySelector('.col-lg-4.order-2.order-md-2');
     const col3 = document.querySelector('.col-lg-4.order-1.order-md-3');
 
-    if (lang === 'en') {
+    if (lang === 'ar') {
         col1.classList.remove('order-arabic-1');
         col2.classList.remove('order-arabic-2');
         col3.classList.remove('order-arabic-3');
