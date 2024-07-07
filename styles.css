@@ -13,6 +13,43 @@ header {
     text-align: center;
 }
 
+@media (max-width: 991.98px) {
+    .section-contact .row {
+        flex-direction: column-reverse; /* Reverse row direction on mobile and tablet screens */
+    }
+
+    .contact-icon {
+        max-height: 60px; /* Reduce icon size further for smaller screens */
+    }
+}
+
+.section-who ul {
+    direction: rtl; /* Set text direction to right-to-left */
+    text-align: right; /* Align the entire list content to the right */
+    padding-right: 0; /* Optional: Adjust padding if necessary */
+}
+
+.section-who ul li {
+    list-style-type: disc; /* Use disc as the list item bullet point */
+    margin-bottom: 8px; /* Adjust margin between list items */
+}
+
+.contact-icon{
+    max-width: 50%;
+    height: 50%;
+}
+
+.custom-img-size {
+    max-width: 50%; /* Adjust the percentage as per your needs */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.custom-num-size {
+    max-width: 30%; /* Adjust the percentage as per your needs */
+    height: 30%; /* Maintain aspect ratio */
+    margin-bottom: 2rem;
+}
+
 .custom-btn {
     background-color: #8CCB5C;
     border-color: #8CCB5C;
@@ -28,7 +65,7 @@ header {
 
 .section-intro, .section-who, .section-why, .section-how, .section-contact {
     padding: 2rem 0;
-    padding-top: 4rem; /* Add this line for extra space at the top */
+    padding-top: 2rem; /* Add this line for extra space at the top */
     text-align: left;
 }
 
@@ -47,6 +84,10 @@ header {
     display: inline-block;
 }
 
+.gradient-text span {
+    display: block;
+}
+
 .section-intro h1 {
     margin: 0;
     font-size: 2.5rem;
@@ -54,6 +95,10 @@ header {
 }
 
 .section-intro span {
+    display: block; /* Ensure spans are on separate lines */
+}
+
+.section-who span {
     display: block; /* Ensure spans are on separate lines */
 }
 

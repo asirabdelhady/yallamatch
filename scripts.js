@@ -33,3 +33,17 @@ document.querySelectorAll('.navbar-nav>li>a').forEach(anchor => {
         document.querySelector('.navbar-collapse').classList.remove('show');
     });
 });
+
+document.querySelector('.navbar-brand').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+document.querySelectorAll('.navbar-brand').forEach(anchor => {
+    anchor.addEventListener('click', function () {
+        document.querySelector('.navbar-collapse').classList.remove('show');
+    });
+});
