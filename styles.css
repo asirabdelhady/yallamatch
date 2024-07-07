@@ -21,15 +21,48 @@ header {
     .contact-icon {
         max-height: 60px; /* Reduce icon size further for smaller screens */
     }
+
+    .section-how .order-english-1 {
+        order: 1;
+    }
+    .section-how .order-english-2 {
+        order: 2;
+    }
+    .section-how .order-english-3 {
+        order: 3;
+    }
 }
 
-.section-who ul {
+.section-how .order-arabic-1 {
+    order: 3;
+}
+.section-how .order-arabic-2 {
+    order: 2;
+}
+.section-how .order-arabic-3 {
+    order: 1;
+}
+
+/* RTL (right-to-left) styles */
+.section-who ul.rtl {
     direction: rtl; /* Set text direction to right-to-left */
     text-align: right; /* Align the entire list content to the right */
     padding-right: 0; /* Optional: Adjust padding if necessary */
 }
 
-.section-who ul li {
+.section-who ul.rtl li {
+    list-style-type: disc; /* Use disc as the list item bullet point */
+    margin-bottom: 8px; /* Adjust margin between list items */
+}
+
+/* LTR (left-to-right) styles */
+.section-who ul.ltr {
+    direction: ltr; /* Set text direction to left-to-right */
+    text-align: left; /* Align the entire list content to the left */
+    padding-left: 0; /* Optional: Adjust padding if necessary */
+}
+
+.section-who ul.ltr li {
     list-style-type: disc; /* Use disc as the list item bullet point */
     margin-bottom: 8px; /* Adjust margin between list items */
 }

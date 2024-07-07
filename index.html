@@ -22,32 +22,35 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#who">احنا مين؟</a>
+                        <a class="nav-link" href="#who" id="navWho">احنا مين؟</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#why">ليه احنا؟</a>
+                        <a class="nav-link" href="#why" id="navWhy">ليه احنا؟</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#how">التسجيل</a>
+                        <a class="nav-link" href="#how" id="navHow">التسجيل</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">التواصل</a>
+                        <a class="nav-link" href="#contact" id="navContact">التواصل</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary" id="lang-switch">English</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <div class="container mt-5 pt-5">
         <!-- Introduction Section -->
         <section id="intro" class="section-intro">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h1 class="gradient-text"><span>اهلا بيك في</span> <span>يلا ماتش</span></h1>
-                        <p>عندنا ملاعب... عندنا ماتشات <span> ناقصنا انت</span></p>
+                        <h1 class="gradient-text"><span id="welcome">اهلا بيك في</span> <span id="yallaMatch">يلا ماتش</span></h1>
+                        <p><span id="missingYou">ناقصنا انت</span></p>
                         <div class="mt-4 d-flex justify-content-center justify-content-lg-start">
-                            <a href="#" class="btn btn-outline-secondary custom-btn">سجل حالا!؟</a>
+                            <a href="#" class="btn btn-outline-secondary custom-btn" id="registerNow">سجل حالا!؟</a>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center mt-4 mt-lg-0">
@@ -56,7 +59,7 @@
                 </div>
             </div>
         </section>
-
+    
         <!-- Who Are We Section -->
         <section id="who" class="section-who text-center">
             <div class="container">
@@ -64,8 +67,8 @@
                     <!-- Text Column (Order 2 on Mobile/Tablet) -->
                     <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0">
                         <div class="text-right">
-                            <h1 class="gradient-text">احنا مين ؟</h1>
-                            <ul class="list-unstyled text-right">
+                            <h1 class="gradient-text" id="whoAreWe">احنا مين ؟</h1>
+                            <ul class="list-unstyled text-right rtl" id="whoList">
                                 <li>احنا فريق بيسهل عليك لعب اي ماتش</li>
                                 <li>سواء تعرف ناس او ماتعرفش</li>
                                 <li>سواء معاك فرقة او ممعكش</li>
@@ -73,7 +76,7 @@
                             </ul>
                         </div>
                     </div>
-        
+    
                     <!-- Image Column (Order 1 on Mobile/Tablet) -->
                     <div class="col-lg-6 order-lg-1 text-center mt-4 mt-lg-0">
                         <img src="assets/aboutus.svg" alt="Yalla Match" class="img-fluid">
@@ -81,14 +84,13 @@
                 </div>
             </div>
         </section>
-        
-
+    
         <!-- Why Us Section -->
         <section id="why" class="section-why">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="gradient-text">ليه احنا؟</h2>
-                    <p>عندنا فريق كامل بيسهل عليك طريقة للتسجيل في اي ماتش منغير ما تتعب نفسك و تنزل تدور وهيوصلك تاكيد بالماتش الهتختاره. غير انك دايما هتلاقي ماتش يناسبك و اننا دايما موجودين حواليك</p>
+                    <h2 class="gradient-text" id="whyUs">ليه احنا؟</h2>
+                    <p id="whyText">عندنا فريق كامل بيسهل عليك طريقة للتسجيل في اي ماتش منغير ما تتعب نفسك و تنزل تدور وهيوصلك تاكيد بالماتش الهتختاره. غير انك دايما هتلاقي ماتش يناسبك و اننا دايما موجودين حواليك</p>
                 </div>
                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
                     <img src="assets/aboutus.svg" alt="Yalla Match" class="img-fluid">
@@ -97,38 +99,37 @@
         </section>
         <!-- How to Register Section -->
         <section id="how" class="section-how text-center">
-            <h2 class="gradient-text">تسجل ازاي؟</h2>
-            <p>في اسهل ثلاث خطوات</p>
+            <h2 class="gradient-text" id="howToRegister">تسجل ازاي؟</h2>
+            <p id="registerStepsText">في اسهل ثلاث خطوات</p>
             <div class="row" style="margin-top: 2rem;">
                 <div class="col-lg-4 order-3 order-md-1">
                     <a>
-                        <img src="assets/thumbsup.svg" class="img-fluid custom-num-size" alt="Register">
+                        <img src="assets/telegram.svg" class="img-fluid custom-num-size" alt="Register">
                     </a>
-                    <p> سجل في الماتش اليناسبك</p>
+                    <p id="joinTelegram">ادخل جروب التليجرام</p>
                 </div>
                 <div class="col-lg-4 order-2 order-md-2">
-                    <a href="https://www.instagram.com/yallamatch.eg?igsh=MWwxajQ5bGQ4eDFuZg==" target="_blank" >
+                    <a href="https://www.instagram.com/yallamatch.eg?igsh=MWwxajQ5bGQ4eDFuZg==" target="_blank">
                         <img src="assets/instagram.svg" class="img-fluid custom-num-size" alt="Instagram">
                     </a>
-                    <p>تابعنا على الانستاحرام</p>
+                    <p id="followInstagram">تابعنا على الانستاحرام</p>
                 </div>
                 <div class="col-lg-4 order-1 order-md-3">
                     <a href="https://t.me/+rRvVRPiaVeZkYjU0" target="_blank">
-                        <img src="assets/telegram.svg" class="img-fluid custom-num-size" alt="Telegram">
+                        <img src="assets/thumbsup.svg" class="img-fluid custom-num-size" alt="Telegram">
                     </a>
-                    <p>ادخل جروب التليجرام</p>
+                    <p id="registerStep">سجل في الماتش اليناسبك</p>
                 </div>
             </div>
         </section>
-            
+    
         <!-- Contact Us Section -->
         <section id="contact" class="section-contact text-right">
             <div class="container">
                 <div class="row">
-                    
                     <div class="col-lg-6 order-lg-1 text-left">
-                        <h2 class="gradient-text">اتواصل معانا</h2>
-                        <p>ادخل جروب التليجرام عشان يوصلك الاشعارات و تابعنا علز الانستاحرام عشان يوصلك اجدد الاخبار</p>
+                        <h2 class="gradient-text" id="contactUs">اتواصل معانا</h2>
+                        <p id="contactText">ادخل جروب التليجرام عشان يوصلك الاشعارات و تابعنا علز الانستاحرام عشان يوصلك اجدد الاخبار</p>
                         <div class="row mt-4">
                             <div class="row">
                                 <div class="col-6 col-md-3 mb-3 mb-md-0 text-center">
@@ -154,7 +155,7 @@
                                     </a>
                                 </div>
                             </div>
-                           
+    
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 text-center mt-4 mt-lg-0">
@@ -163,13 +164,13 @@
                 </div>
             </div>
         </section>
-        
-        
     </div>
-
+    
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 YallaMatch. All rights reserved.</p>
     </footer>
+    
+    
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
