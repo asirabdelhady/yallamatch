@@ -166,3 +166,33 @@ footer {
     position: relative;
     width: 100%;
 }
+
+.text-left ul {
+    direction: ltr; /* Set text direction to left-to-right */
+    text-align: left; /* Align the entire list content to the left */
+    padding-left: 0; /* Optional: Adjust padding if necessary */
+}
+
+.text-right ul {
+    direction: rtl; /* Set text direction to right-to-left */
+    text-align: right; /* Align the entire list content to the right */
+    padding-right: 0; /* Optional: Adjust padding if necessary */
+}
+
+.text-left ul li, .text-right ul li {
+    list-style-type: disc; /* Use disc as the list item bullet point */
+    margin-bottom: 8px; /* Adjust margin between list items */
+}
+
+.btn-outline-success{
+    color: #8CCB5C;
+    outline-color: #8CCB5C;
+    
+}
+
+.btn-outline-success:hover{
+    color: white;
+    background-color: #8CCB5C;
+    outline-color: #8CCB5C;
+    
+}

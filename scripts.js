@@ -65,6 +65,8 @@ const content = {
     ar: {
         welcome: "اهلا بيك في",
         yallaMatch: "يلا ماتش",
+        yallaMatch2: "يلا ماتش",
+        weGot: "عندنا ملاعب...عندنا ماتشات",
         missingYou: "ناقصنا انت",
         registerNow: "سجل حالا!؟",
         whoAreWe: "احنا مين؟",
@@ -91,7 +93,9 @@ const content = {
     en: {
         welcome: "Welcome to",
         yallaMatch: "Yalla Match",
-        missingYou: "We are missing you",
+        yallaMatch2: "YallaMatch!",
+        weGot: "We got the feilds, we got the matches...",
+        missingYou: "We are missing you!",
         registerNow: "Register Now!",
         whoAreWe: "Who Are We?",
         whoList: [
@@ -120,6 +124,8 @@ function switchLanguage(lang) {
     console.log('Switching language to:', lang);
     document.getElementById('welcome').textContent = content[lang].welcome;
     document.getElementById('yallaMatch').textContent = content[lang].yallaMatch;
+    document.getElementById('yallaMatch2').textContent = content[lang].yallaMatch2;
+    document.getElementById('weGot').textContent = content[lang].weGot;
     document.getElementById('missingYou').textContent = content[lang].missingYou;
     document.getElementById('registerNow').textContent = content[lang].registerNow;
     document.getElementById('whoAreWe').textContent = content[lang].whoAreWe;
@@ -147,14 +153,18 @@ function switchLanguage(lang) {
     document.getElementById('navContact').textContent = content[lang].navContact;
 
     const ulElement = document.querySelector('#whoList');
+    const divElement = ulElement.parentElement;
+
     if (lang === 'en') {
-        ulElement.classList.remove('rtl');
-        ulElement.classList.add('ltr');
-        ulElement.style.textAlign = 'left';
+        ulElement.classList.remove('text-right', 'rtl');
+        ulElement.classList.add('text-left');
+        divElement.classList.remove('text-right');
+        divElement.classList.add('text-left');
     } else {
-        ulElement.classList.remove('ltr');
-        ulElement.classList.add('rtl');
-        ulElement.style.textAlign = 'right';
+        ulElement.classList.remove('text-left');
+        ulElement.classList.add('text-right', 'rtl');
+        divElement.classList.remove('text-left');
+        divElement.classList.add('text-right');
     }
 
     const col1 = document.querySelector('.col-lg-4.order-3.order-md-1');
