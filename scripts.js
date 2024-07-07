@@ -27,3 +27,9 @@ document.querySelector('.btn-outline-secondary').addEventListener('click', funct
         behavior: 'smooth'
     });
 });
+
+document.querySelectorAll('.navbar-nav>li>a').forEach(anchor => {
+    anchor.addEventListener('click', function () {
+        document.querySelector('.navbar-collapse').classList.remove('show');
+    });
+});
