@@ -1,0 +1,28 @@
+{
+    "welcome": "Welcome to",
+    "yallaMatch": "Yalla Match",
+    "yallaMatch2": "YallaMatch!",
+    "weGot": "We got the fields, we got the matches...",
+    "missingYou": "We are missing you!",
+    "registerNow": "Register Now!",
+    "whoAreWe": "Who Are We?",
+    "whoList": [
+      "We are a team that makes it easy for you to play any match",
+      "Whether you know people or not",
+      "Whether you have a team or not",
+      "We always have matches, choose what suits you and come"
+    ],
+    "whyUs": "Why Us?",
+    "whyText": "We have a whole team that makes it easy for you to register for any match without tiring yourself and going out looking for one. You will get a confirmation for the match you choose. Additionally, you will always find a match that suits you, and we are always around you.",
+    "howToRegister": "How to Register?",
+    "registerStepsText": "In the easiest three steps",
+    "registerStep": "Register for the match that suits you",
+    "followInstagram": "Follow us on Instagram",
+    "joinTelegram": "Join the Telegram Group",
+    "contactUs": "Contact Us",
+    "contactText": "Join the Telegram group to receive notifications and follow us on Instagram for the latest news.",
+    "navWho": "Who Are We?",
+    "navWhy": "Why Us?",
+    "navHow": "How to Register",
+    "navContact": "Contact"
+  }
