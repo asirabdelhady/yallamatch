@@ -78,8 +78,8 @@ header {
 }
 
 .custom-num-size {
-    max-width: 30%; /* Adjust the percentage as per your needs */
-    height: 30%; /* Maintain aspect ratio */
+    max-width: 60%; /* Adjust the percentage as per your needs */
+    height: 60%; /* Maintain aspect ratio */
     margin-bottom: 2rem;
 }
 
